@@ -3,7 +3,7 @@ name: Auto Submit Google Form
 
 on:
   schedule:
-    - cron: '*/15 0-16 * * *'
+    - cron: '*/60 0-16 * * *'
   workflow_dispatch:  # Cho phép chạy thủ công
 
 jobs:
@@ -42,4 +42,5 @@ jobs:
           git pull origin main --rebase
           # Sau đó push
           git push
+
 
